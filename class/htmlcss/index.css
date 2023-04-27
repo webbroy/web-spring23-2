@@ -1,0 +1,23 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border: 1px solid black;
+}
+
+/* ul,
+ol {
+	list-style: upper-roman;
+} */
+
+body {
+	margin: 0;
+}
+
+div {
+	border: 1px solid black;
+	height: 10px;
+}
