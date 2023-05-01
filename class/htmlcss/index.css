@@ -2,6 +2,9 @@
 /* Use a selector to target a tag then apply styles to it */
 /* "*" means "select all" */
 
+title {
+	background-color: aqua;
+}
 table {
 	border-collapse: collapse;
 	width: 100%;
