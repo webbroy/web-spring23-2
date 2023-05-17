@@ -9,6 +9,8 @@ console.log(checkAge(70)); // Output: "Special discount"
 console.log(checkAge(60)); // Output: "Not Allowed"
 console.log(checkAge(65)); // Output: "Special discount"
 
+////////////////////////////////////////////////////////
+
 function multiplyBy100(numbers) {
 	var multipliedArray = numbers.map(function (number) {
 		return number * 100;
@@ -22,6 +24,8 @@ var multipliedNumbers = multiplyBy100(numbers);
 
 console.log(multipliedNumbers); // Output: [100, 200, 300, 400, 500]
 console.log(numbers); // Output: [1, 2, 3, 4, 5]
+
+////////////////////////////////////////////////////////
 
 function multiplyBy100IfLengthGreaterThan5(numbers) {
 	if (numbers.length > 5) {
@@ -47,6 +51,8 @@ console.log(multipliedNumbers2); // Output: [100, 200, 300, 400, 500, 600, 700]
 console.log(numbers1); // Output: [1, 2, 3, 4, 5]
 console.log(numbers2); // Output: [1, 2, 3, 4, 5, 6, 7]
 
+////////////////////////////////////////////////////////
+
 function multiplyEvenBy100(numbers) {
 	var multipliedArray = numbers.map(function (number) {
 		if (number % 2 === 0) {
@@ -65,6 +71,8 @@ var multipliedNumbers = multiplyEvenBy100(numbers);
 console.log(multipliedNumbers); // Output: [1, 200, 3, 400, 5, 600]
 console.log(numbers); // Output: [1, 2, 3, 4, 5, 6]
 
+////////////////////////////////////////////////////////
+
 function countOccurrences(array, number) {
 	var count = 0;
 	array.forEach(function (element) {
@@ -80,6 +88,8 @@ var targetNumber = 154;
 var occurrenceCount = countOccurrences(numbers, targetNumber);
 
 console.log(occurrenceCount); // Output: 3
+
+////////////////////////////////////////////////////////
 
 function checkType(input) {
 	if (Array.isArray(input) || typeof input === "object") {
