@@ -51,3 +51,25 @@ const myObject = {
 };
 
 console.log(getObjectKeys(myObject)); // Output: ["name", "email", "age"]
+
+///////////////////////////////////////////////////////////////////
+
+function maxProfit(prices) {
+	if (prices.length < 2) {
+		// Not enough prices to make a profit
+		return 0;
+	}
+
+	let maxProfit = 0;
+	let minPrice = prices[0];
+
+	for (let i = 1; i < prices.length; i++) {
+		const currentPrice = prices[i];
+		minPrice = Math.min(minPrice, currentPrice);
+		maxProfit = Math.max(maxProfit, currentPrice - minPrice);
+	}
+
+	return maxProfit;
+}
+const stockPrices = [315, 50, 314, 684, 100, 648, 132, 50, 98, 45];
+console.log(maxProfit(stockPrices)); // Output: 634
