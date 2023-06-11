@@ -456,7 +456,17 @@
 // myBakery.setNumberOfEmployees(100);
 // console.log(myBakery.getNumberOfEmployees());
 
-const arrA = [100, 800];
-const arrB = [1, 2, [44, 55]];
-const arrC = [...arrA, arrB];
-console.log(arrC);
+// const arrA = [100, 800];
+// const arrB = [1, 2, [44, 55]];
+// const arrC = [...arrA, arrB];
+// console.log(arrC);
+
+function outer(a) {
+	return function (b) {
+		return a + b;
+	};
+}
+// outer();
+// console.log(a, b);
+const inner = outer(5);
+console.log(inner(6));
