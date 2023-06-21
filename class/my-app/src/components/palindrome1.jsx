@@ -6,6 +6,7 @@ class Palindrome1 extends Component {
 
 		this.state = {
 			text: "",
+			textB: "",
 		};
 
 		this.handleChange = this.handleChange.bind(this);
@@ -21,6 +22,7 @@ class Palindrome1 extends Component {
 	handleClear() {
 		this.setState({
 			text: "",
+			textB: "",
 		});
 	}
 
@@ -33,23 +35,29 @@ class Palindrome1 extends Component {
 	// A controlled component will force the input state to synchronize with the React state
 
 	render() {
-		// console.log("text state", this.state.text);
-		// console.log("test racecar", this.isPalindrome("raceca"));
+		const isPalindrome = this.isPalindrome(this.state.text);
+		const message = isPalindrome ? `${this.state.text} IS a palindrome` : `${this.state.text} IS NOT a palindrome`;
 
 		return (
 			<div>
 				<h1>Palindrome</h1>
-				<label id="palindrome">
-					Enter some text: <input id="palindrome" type="text" onChange={this.handleChange} value={this.state.text} />
+				<label htmlFor="text">
+					Enter some text:{""} <input id="palindrome" type="text" onChange={this.handleChange} value={this.state.text} />
 				</label>
+				<br />
+				<label htmlFor="textB">
+					Enter some additional text:{""} <input id="textB" type="text" onChange={this.handleChange} value={this.state.textB} />
+				</label>
+				<br />
 				<button type="button" onClick={this.handleClear}>
 					Clear
 				</button>
 
-				<br />
-				{isPalindrome ? <p>{word} is a palindrome!</p> : <p>{word} is not a palindrome.</p>}
+				{/* TODO: Create a second input field here as a controlled component to update the "textB" state */}
 
-				<h2>{this.state.text} IS/IS NOT a palindrome</h2>
+				<br />
+
+				<h2>{message}</h2>
 			</div>
 		);
 	}
