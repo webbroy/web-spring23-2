@@ -2,40 +2,42 @@ import { Component } from "react";
 import "./App.css";
 import ClockA from "./components/ClockA";
 import Homework1 from "./components/Homework1";
-import Palindrome1 from "./components/palindrome1";
+import Palindrome1 from "./components/Palindrome1";
+import PalindromeB from "./components/PalindromeB";
+import React, { useState, useEffect } from "react";
 
-class App extends Component {
-	constructor(props) {
-		super(props);
+// class App extends Component {
+// 	constructor(props) {
+// 		super(props);
 
-		this.state = {
-			showClockA: false,
-		};
+// 		this.state = {
+// 			showClockA: false,
+// 		};
 
-		this.handleToggleClockA = this.handleToggleClockA.bind(this);
-	}
+// 		this.handleToggleClockA = this.handleToggleClockA.bind(this);
+// 	}
 
-	handleToggleClockA(event) {
-		this.setState({
-			showClockA: !this.state.showClockA,
-		});
-	}
+// 	handleToggleClockA(event) {
+// 		this.setState({
+// 			showClockA: !this.state.showClockA,
+// 		});
+// 	}
 
-	render() {
-		console.log("App rendering");
-		console.log("state", this.state.showClockA);
+// 	render() {
+// 		console.log("App rendering");
+// 		console.log("state", this.state.showClockA);
 
-		return (
-			<div>
-				{this.state.showClockA ? <ClockA /> : null}
-				<button onClick={this.handleToggleClockA}>Toggle ClockA</button>
-				<div>
-					<Palindrome1 />
-				</div>
-			</div>
-		);
-	}
-}
+// 		return (
+// 			<div>
+// 				{this.state.showClockA ? <ClockA /> : null}
+// 				<button onClick={this.handleToggleClockA}>Toggle ClockA</button>
+// 				<div>
+// 					<Palindrome1 />
+// 				</div>
+// 			</div>
+// 		);
+// 	}
+// }
 // 	constructor(props) {
 // 		super(props);
 
@@ -59,5 +61,27 @@ class App extends Component {
 // 		);
 // 	}
 // }
+function App() {
+	const [showClockA, setShowClockA] = useState(false);
+
+	const handleToggleClockA = () => {
+		setShowClockA((prevShowClockA) => !prevShowClockA);
+	};
+
+	console.log("App rendering");
+	console.log("state", showClockA);
+
+	return (
+		<div>
+			<div>
+				{showClockA ? <ClockA /> : null}
+				<button onClick={handleToggleClockA}>Toggle ClockA</button>
+				<div>
+					<PalindromeB />
+				</div>
+			</div>
+		</div>
+	);
+}
 
 export default App;

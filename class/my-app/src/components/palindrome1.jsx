@@ -11,6 +11,8 @@ class Palindrome1 extends Component {
 
 		this.handleChange = this.handleChange.bind(this);
 		this.handleClear = this.handleClear.bind(this);
+		this.handleChange2 = this.handleChange.bind(this);
+		this.handleClear2 = this.handleClear.bind(this);
 	}
 
 	handleChange(event) {
@@ -18,10 +20,19 @@ class Palindrome1 extends Component {
 			text: event.target.value,
 		});
 	}
+	handleChange2(event) {
+		this.setState({
+			textB: event.target.value,
+		});
+	}
 
 	handleClear() {
 		this.setState({
 			text: "",
+		});
+	}
+	handleClear2() {
+		this.setState({
 			textB: "",
 		});
 	}
@@ -45,7 +56,7 @@ class Palindrome1 extends Component {
 					Enter some text:{""} <input id="palindrome" type="text" onChange={this.handleChange} value={this.state.text} />
 				</label>
 				<br />
-				<label htmlFor="textB">
+				<label id="textB">
 					Enter some additional text:{""} <input id="textB" type="text" onChange={this.handleChange} value={this.state.textB} />
 				</label>
 				<br />
