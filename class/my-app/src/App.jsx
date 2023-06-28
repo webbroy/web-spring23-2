@@ -4,6 +4,7 @@ import ClockA from "./components/ClockA";
 import Homework1 from "./components/Homework1";
 import Palindrome1 from "./components/Palindrome1";
 import PalindromeB from "./components/PalindromeB";
+import TestEffectCounter from "./components/TestEffectCounter";
 import React, { useState, useEffect } from "react";
 
 // class App extends Component {
@@ -78,6 +79,10 @@ function App() {
 				<button onClick={handleToggleClockA}>Toggle ClockA</button>
 				<div>
 					<PalindromeB />
+				</div>
+				<div>
+					{" "}
+					<TestEffectCounter />
 				</div>
 			</div>
 		</div>
