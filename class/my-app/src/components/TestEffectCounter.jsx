@@ -6,8 +6,8 @@ import React, { useCallback, useEffect, useState } from "react";
  * See if you can understand and make sense of the useEffect behavior.
  * Read the React documentation for more information.
  * Test the component's useEffect with no dependency array, with empty dep. array, and with a dependency array with dependent variables inside it.
- * @returns {JSX.Element}
- */
+ */ // @returns {JSX.Element}
+///
 const TestEffectCounter = () => {
 	const [counter, setCounter] = useState(0);
 
