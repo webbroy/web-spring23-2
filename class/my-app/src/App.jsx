@@ -5,6 +5,8 @@ import Homework1 from "./components/Homework1";
 import Palindrome1 from "./components/Palindrome1";
 import PalindromeB from "./components/PalindromeB";
 import TestEffectCounter from "./components/TestEffectCounter";
+import Users from "./components/Users";
+import Fetch from "./components/Fetch";
 import React, { useState, useEffect } from "react";
 
 // class App extends Component {
@@ -63,27 +65,36 @@ import React, { useState, useEffect } from "react";
 // 	}
 // }
 function App() {
-	const [showClockA, setShowClockA] = useState(false);
+	// const [showClockA, setShowClockA] = useState(false);
 
-	const handleToggleClockA = () => {
-		setShowClockA((prevShowClockA) => !prevShowClockA);
-	};
+	// const handleToggleClockA = () => {
+	// 	setShowClockA((prevShowClockA) => !prevShowClockA);
+	// };
 
-	console.log("App rendering");
-	console.log("state", showClockA);
+	// console.log("App rendering");
+	// console.log("state", showClockA);
 
 	return (
+		// <div>
+		// 	<div>
+		// 		{/* {showClockA ? <ClockA /> : null}
+		// 		<button onClick={handleToggleClockA}>Toggle ClockA</button>
+		// 		<div>
+		// 			<PalindromeB />
+		// 		</div>
+		// 		<div>
+		// 			{" "}
+		// 			<TestEffectCounter />
+		// 		</div> */}
+		// 		<div>
+		// 			<Users />
+		// 		</div>
+		// 	</div>
+		// </div>
 		<div>
+			<Users />
 			<div>
-				{showClockA ? <ClockA /> : null}
-				<button onClick={handleToggleClockA}>Toggle ClockA</button>
-				<div>
-					<PalindromeB />
-				</div>
-				<div>
-					{" "}
-					<TestEffectCounter />
-				</div>
+				<Fetch />
 			</div>
 		</div>
 	);
