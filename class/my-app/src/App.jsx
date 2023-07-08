@@ -7,6 +7,7 @@ import PalindromeB from "./components/PalindromeB";
 import TestEffectCounter from "./components/TestEffectCounter";
 import Users from "./components/Users";
 import Fetch from "./components/Fetch";
+import LoginForm from "./components/LoginForm";
 import React, { useState, useEffect } from "react";
 
 // class App extends Component {
@@ -92,10 +93,11 @@ function App() {
 		// 	</div>
 		// </div>
 		<div>
-			<Users />
+			{/* <Users />
 			<div>
 				<Fetch />
-			</div>
+			</div> */}
+			<LoginForm />
 		</div>
 	);
 }
