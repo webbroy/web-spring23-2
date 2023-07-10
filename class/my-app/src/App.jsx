@@ -10,7 +10,7 @@ import Fetch from "./components/Fetch";
 import LoginForm from "./components/LoginForm";
 import React, { useState, useEffect } from "react";
 import User from "./components/User";
-import Input from "./Input";
+import Input from "./components/Input";
 
 // class App extends Component {
 // 	constructor(props) {
