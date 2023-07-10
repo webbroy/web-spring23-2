@@ -9,6 +9,8 @@ import Users from "./components/Users";
 import Fetch from "./components/Fetch";
 import LoginForm from "./components/LoginForm";
 import React, { useState, useEffect } from "react";
+import User from "./components/User";
+import Input from "./Input";
 
 // class App extends Component {
 // 	constructor(props) {
@@ -97,7 +99,11 @@ function App() {
 			<div>
 				<Fetch />
 			</div> */}
-			<LoginForm />
+			{/* <LoginForm /> */}
+			<Input label="Username" type="text" />
+			<Input label="Password" type="password" />
+
+			<User />
 		</div>
 	);
 }
