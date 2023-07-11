@@ -1,16 +1,17 @@
 import { Component } from "react";
 import "./App.css";
-import ClockA from "./components/ClockA";
-import Homework1 from "./components/Homework1";
-import Palindrome1 from "./components/Palindrome1";
-import PalindromeB from "./components/PalindromeB";
-import TestEffectCounter from "./components/TestEffectCounter";
-import Users from "./components/Users";
-import Fetch from "./components/Fetch";
+// import ClockA from "./components/ClockA";
+// import Homework1 from "./components/Homework1";
+// import Palindrome1 from "./components/Palindrome1";
+// import PalindromeB from "./components/PalindromeB";
+// import TestEffectCounter from "./components/TestEffectCounter";
+// import Users from "./components/Users";
+// import Fetch from "./components/Fetch";
 import LoginForm from "./components/LoginForm";
 import React, { useState, useEffect } from "react";
-import User from "./components/User";
-import Input from "./components/Input";
+// import User from "./components/User";
+// import Input from "./components/Input";
+// import UserHw from "./components/UserHw";
 
 // class App extends Component {
 // 	constructor(props) {
@@ -99,11 +100,13 @@ function App() {
 			<div>
 				<Fetch />
 			</div> */}
-			{/* <LoginForm /> */}
-			<Input label="Username" type="text" />
+			<LoginForm />
+			{/* <Input label="Username" type="text" />
 			<Input label="Password" type="password" />
 
-			<User />
+			<User /> */}
+
+			{/* <UserHw /> */}
 		</div>
 	);
 }

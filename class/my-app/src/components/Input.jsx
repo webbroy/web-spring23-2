@@ -1,17 +1,12 @@
-import React from "react";
+// import React from "react";
 
-/**
- * Reusable input component with label and input
- * All attributes passed as props are applied to the label or input element
- * @returns {JSX.Element}
- */
-const Input = ({ label, ...props }) => {
-	return (
-		<div>
-			<label>{label}</label>
-			<input {...props} />
-		</div>
-	);
-};
+// const Input = ({ label, ...rest }) => {
+// 	return (
+// 		<div>
+// 			<label>{label}</label>
+// 			<input {...rest} />
+// 		</div>
+// 	);
+// };
 
-export default Input;
+// export default Input;

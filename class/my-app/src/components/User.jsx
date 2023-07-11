@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Input from "./Input";
 
 /**
  * Component to fetch and display data of an individual user from the API
