@@ -106,20 +106,22 @@ const LoginForm = () => {
 				<h1 className="text-xl text-indigo-500 mb-4 font-bold">Login</h1>
 				<form onSubmit={handleLogin} className="flex flex-col gap-4">
 					{/* email */}
-					<div className="text-left flex justify-between">
+					{/* <div className="text-left flex justify-between">
 						<label htmlFor="email">Email</label>
 						<input className="border-2 border-black rounded-md px-2 py-1" type="email" id="email" placeholder="user@domain.com" required onChange={handleChange} />
 					</div>
 
 					{/* password */}
-					<div className="text-left flex justify-between">
+					{/* <div className="text-left flex justify-between">
 						<label htmlFor="password">Password</label>
 						<input className="border-2 border-black rounded-md px-2 py-1" type="password" id="password" required onChange={handleChange} />
+					</div>  */}
+					<div className="text-left flex justify-between">
+						<Input input className="border-2 border-black rounded-md px-2 py-1" label="Email" id="email" type="email" placeholder="user@domain.com" required onChange={handleChange} />
 					</div>
-
-					<Input label="Email" id="email" type="email" placeholder="user@domain.com" required onChange={handleChange} />
-
-					<Input label="Password" id="password" type="password" required onChange={handleChange} />
+					<div className="text-left flex justify-between">
+						<Input input className="border-2 border-black rounded-md px-2 py-1" label="Password" id="password" type="password" required onChange={handleChange} />
+					</div>
 
 					{/* 2 buttons for submission or go back */}
 
