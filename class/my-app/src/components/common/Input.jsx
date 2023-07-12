@@ -6,8 +6,14 @@ import React from "react";
  * Your component must contain styles as well
  * @returns
  */
-const Input = () => {
-	return <div>Input</div>;
+
+const Input = ({ label, id, ...otherProps }) => {
+	return (
+		<div className="text-left flex justify-between">
+			<label htmlFor={id}>{label}</label>
+			<input id={id} className="border-2 border-black rounded-md px-2 py-1" {...otherProps} />
+		</div>
+	);
 };
 
 export default Input;

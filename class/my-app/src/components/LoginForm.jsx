@@ -60,6 +60,7 @@
 
 import React, { useState } from "react";
 import Button from "./common/Button";
+import Input from "./common/Input";
 
 const LoginForm = () => {
 	// TODO: set up state management (use just 1 state)
@@ -115,6 +116,10 @@ const LoginForm = () => {
 						<label htmlFor="password">Password</label>
 						<input className="border-2 border-black rounded-md px-2 py-1" type="password" id="password" required onChange={handleChange} />
 					</div>
+
+					<Input label="Email" id="email" type="email" placeholder="user@domain.com" required onChange={handleChange} />
+
+					<Input label="Password" id="password" type="password" required onChange={handleChange} />
 
 					{/* 2 buttons for submission or go back */}
 
