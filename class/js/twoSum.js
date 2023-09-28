@@ -16,4 +16,4 @@
 
 var myName = "anna";
 let age = 20; // this results in compile-time error
-console.log(age);
+console.log(myName);
